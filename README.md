@@ -8,7 +8,7 @@
 ## Service Worker
 Service Worker是一個事件驅動的網站 Worker，根據不同的來源(origin)與網址路徑(path)進行註冊後，之後再次訪問同一網站後即會在背景執行這個 Server Worker。
 
-Server Worker 所以無法直接存取 DOM 物件，他負責監聽和處理像是 *fetch*, *notification(推播)*, *sync* 還有 *Server Worker 註冊、啟動* 等相關事件。
+Server Worker 無法直接存取 DOM 物件，他負責監聽和處理像是 *fetch*, *notification(推播)*, *sync* 還有 *Server Worker 註冊、啟動* 等相關事件。
 
 透過處理上述事件，我們可以讓 web 網頁像一般的手機原生 App 一樣可以執行安裝、發送推播、離線瀏覽及連線後同步等等作業。
 
