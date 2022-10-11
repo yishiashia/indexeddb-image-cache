@@ -36,7 +36,7 @@ Service Worker 無法直接存取 DOM 物件，他負責監聽和處理像是 *f
 ▲ <i>Service Worker 圖片快取簡略流程圖</i>
 
 ## 程式碼實作
-在網頁載入時，可以透過 `navigator.register` 進行 Service Worker 的安裝註冊動作:
+在網頁載入時，可以透過 `navigator.serviceWorker.register` 進行 Service Worker 的安裝註冊動作:
 
 ```javascript
 <script>
